@@ -57,6 +57,33 @@ async function deleteAttendee(id) {
     }
 }
 
+// Update an attendee
+async function updateAttendee(id, updatedData) {
+    try {
+        await fetch(`${APIBaseURL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData)
+        });
+        fetchAttendees(); // Refresh attendee list
+    } catch (error) {
+        console.error('Error updating attendee:', error);
+    }
+}
+
+// Edit an attendee
+function editAttendee(id) {
+    const name = prompt('Enter new name:');
+    const email = prompt('Enter new email:');
+    const eventName = prompt('Enter new event name:');
+
+    if (name && email && eventName) {
+        updateAttendee(id, { name, email, event: eventName });
+    } else {
+        alert('All fields are required for updating!');
+    }
+}
+
 // Event listener for the add attendee form
 document.getElementById('add-attendee-form').addEventListener('submit', addAttendee);
 

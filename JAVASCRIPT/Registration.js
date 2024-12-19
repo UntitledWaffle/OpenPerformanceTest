@@ -57,6 +57,33 @@ async function deleteRegistration(id) {
     }
 }
 
+// Update a registration
+async function updateRegistration(id, updatedData) {
+    try {
+        await fetch(`${APIBaseURL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData)
+        });
+        fetchRegistrations(); // Refresh registration list
+    } catch (error) {
+        console.error('Error updating registration:', error);
+    }
+}
+
+// Edit a registration
+function editRegistration(id) {
+    const attendee = prompt('Enter new attendee name:');
+    const eventName = prompt('Enter new event name:');
+    const status = prompt('Enter new status (Scheduled, Completed, Cancelled):');
+
+    if (attendee && eventName && status) {
+        updateRegistration(id, { attendee, event: eventName, status });
+    } else {
+        alert('All fields are required for updating!');
+    }
+}
+
 // Event listener for the add registration form
 document.getElementById('add-registration-form').addEventListener('submit', addRegistration);
 

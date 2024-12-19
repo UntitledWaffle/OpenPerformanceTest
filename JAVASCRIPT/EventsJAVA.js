@@ -57,6 +57,33 @@ async function deleteEvent(id) {
     }
 }
 
+// Update an event
+async function updateEvent(id, updatedData) {
+    try {
+        await fetch(`${APIBaseURL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData)
+        });
+        fetchEvents(); // Refresh event list
+    } catch (error) {
+        console.error('Error updating event:', error);
+    }
+}
+
+// Edit an event
+function editEvent(id) {
+    const name = prompt('Enter new event name:');
+    const date = prompt('Enter new event date (YYYY-MM-DD):');
+    const location = prompt('Enter new event location:');
+
+    if (name && date && location) {
+        updateEvent(id, { name, date, location });
+    } else {
+        alert('All fields are required for updating!');
+    }
+}
+
 // Event listener for the add event form
 document.getElementById('add-event-form').addEventListener('submit', addEvent);
 
