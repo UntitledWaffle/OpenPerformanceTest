@@ -57,11 +57,6 @@ async function deleteEvent(id) {
     }
 }
 
-// Edit an event (placeholder for implementation)
-function editEvent(id) {
-    alert(`Edit functionality not yet implemented for event ID: ${id}`);
-}
-
 // Event listener for the add event form
 document.getElementById('add-event-form').addEventListener('submit', addEvent);
 

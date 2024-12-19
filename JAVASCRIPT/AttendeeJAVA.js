@@ -57,11 +57,6 @@ async function deleteAttendee(id) {
     }
 }
 
-// Edit an attendee (placeholder for implementation)
-function editAttendee(id) {
-    alert(`Edit functionality not yet implemented for attendee ID: ${id}`);
-}
-
 // Event listener for the add attendee form
 document.getElementById('add-attendee-form').addEventListener('submit', addAttendee);
 
