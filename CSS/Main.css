@@ -1,0 +1,97 @@
+/* General Body Styles */
+body {
+    background-color: #000000; /* Black background */
+    color: #00ffcc; /* Neon cyan text */
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #111111; /* Dark gray background for header */
+    color: #00ffcc; /* Neon cyan text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00ffcc; /* Neon border */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #111111; /* Dark gray background */
+    color: #00ffcc; /* Neon cyan text */
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #00ffcc; /* Neon cyan border */
+    padding: 10px;
+}
+
+th {
+    background-color: #222222; /* Slightly lighter gray for headers */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #333333; /* Hover effect with darker background */
+    color: #ffffff; /* Bright text on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #00ffcc; /* Neon cyan button background */
+    color: #000000; /* Black text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00ffaa; /* Slightly lighter cyan on hover */
+}
+
+/* Input Styles */
+input, textarea {
+    background-color: #111111; /* Dark background for input fields */
+    color: #00ffcc; /* Neon text */
+    border: 1px solid #00ffcc; /* Neon border */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #00ffcc; /* Neon cyan links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00ffaa; /* Slightly lighter on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111111; /* Footer background */
+    color: #00ffcc; /* Neon text */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #00ffcc; /* Neon border */
+}

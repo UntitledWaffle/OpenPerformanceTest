@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html lang = en>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Homepage</title>
+    <title>Events Management</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <script src="../JAVASCRIPT/EventsJAVA.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Events Management</h1>
+        <nav>
+            <a href="../index.html">Return to Homepage</a>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>All Events</h2>
+            <button id="get-events-btn">Get Events</button>
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>Add New Event</h2>
+            <form id="add-event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
 
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
 
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management Portal. All rights "reserved".</p>
+    </footer>
 </body>
-
-
 </html>

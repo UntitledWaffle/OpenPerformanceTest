@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html lang = en>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Homepage</title>
+    <title>Attendee Management</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <script src="../JAVASCRIPT/AttendeeJAVA.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Attendee Management</h1>
+        <nav>
+            <a href="../index.html">Return to Homepage</a>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>All Attendees</h2>
+            <button id="get-attendees-btn">Get Attendees</button>
+            <table id="attendees-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Event</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>Add New Attendee</h2>
+            <form id="add-attendee-form">
+                <label for="attendee-name">Name:</label>
+                <input type="text" id="attendee-name" name="attendee-name" required>
 
+                <label for="attendee-email">Email:</label>
+                <input type="email" id="attendee-email" name="attendee-email" required>
 
+                <label for="attendee-event">Event:</label>
+                <input type="text" id="attendee-event" name="attendee-event" required>
+
+                <button type="submit">Add Attendee</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management Portal. All rights reserved.</p>
+    </footer>
 </body>
-
-
 </html>

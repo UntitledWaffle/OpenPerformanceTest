@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang = en>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Homepage</title>
+    <title>Registration Management</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <script src="../JAVASCRIPT/Registration.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Registration Management</h1>
+        <nav>
+            <a href="../index.html">Return to Homepage</a>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>All Registrations</h2>
+            <button id="get-regis-btn">Get Registrations</button>
+            <table id="regis-table">
+                <thead>
+                    <tr>
+                        <th>Attendee</th>
+                        <th>Event</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>Add Registration</h2>
+            <form id="add-regis-form">
+                <label for="regis-attendee">Attendee:</label>
+                <input type="text" id="regis-attendee" name="regis-attendee" required>
 
+                <label for="regis-event">Event:</label>
+                <input type="text" id="regis-event" name="regis-event" required>
 
+                <label for="reg-status">Status:</label>
+                <select id="reg-status" name="registration-status" required>
+                    <option value="Scheduled">Scheduled</option>
+                    <option value="Confirmed">Confirmed</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+
+                <button type="submit">Add Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management Portal. All rights" reserved".</p>
+    </footer>
 </body>
-
-
 </html>
