@@ -25,7 +25,7 @@ The Event Management System API enables the following operations:
 - **Attendees**: Manage attendee records.
 - **Registrations**: Register attendees to events and maintain their relationships.
 
-**Tech Stack**:
+**Tech used**:
 - Built using ASP.NET Core
 - Interacts with an SQL Server database
 
@@ -196,6 +196,29 @@ The database schema includes the following tables:
    ```json
    {
      "ConnectionStrings": {
-       "ctc_dev_DBConnection": "YourDatabaseConnectionString"
+       "Your DBconnection": "YourDatabaseConnectionString"
      }
    }
+
+---
+
+## Using the HTML Interface
+
+The project includes a set of HTML files for managing events, attendees, and registrations via the API. Follow these steps:
+
+1. **Open the HTML Files**:
+   - Navigate to the `HTML` folder and open the corresponding file in your browser:
+     - `Page.html`: Manage events.
+     - `page2.html`: Manage attendees.
+     - `page3.html`: Manage registrations.
+
+2. **Interacting with the API**:
+   - Use the buttons on each page to fetch data from the API.
+   - Fill out forms to add new entries.
+   - Use the table action buttons (e.g., Delete, Edit) for respective operations.
+
+3. **Required Setup**:
+   - Ensure the API is running locally or hosted, and update the JavaScript files in the `JAVASCRIPT` folder to point to the correct API base URL (e.g., `http://localhost:5000/api`).
+
+4. **Styling**:
+   - The HTML files are styled using `Main.css`
