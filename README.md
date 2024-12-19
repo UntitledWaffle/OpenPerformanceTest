@@ -208,9 +208,9 @@ The project includes a set of HTML files for managing events, attendees, and reg
 
 1. **Open the HTML Files**:
    - Navigate to the `HTML` folder and open the corresponding file in your browser:
-     - `Page.html`: Manage events.
-     - `page2.html`: Manage attendees.
-     - `page3.html`: Manage registrations.
+     - `EventsManagment.html`: Manage events.
+     - `AttendeeManagment.html`: Manage attendees.
+     - `RegistrationManagment.html`: Manage registrations.
 
 2. **Interacting with the API**:
    - Use the buttons on each page to fetch data from the API.

@@ -1,8 +1,9 @@
-/* General Body Styles */
+/* General Body Styles with cool font import*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 body {
     background-color: #000000; /* Black background */
     color: #00ffcc; /* Neon cyan text */
-    font-family: Arial, sans-serif; /* Simple, readable font */
+    font-family: Orbitron, sans-serif; /* Simple, readable font as well as cool!!!*/
     margin: 0;
     padding: 0;
 }
@@ -77,13 +78,13 @@ input, textarea {
 
 /* Links */
 a {
-    color: #00ffcc; /* Neon cyan links */
+    color: #8ef3f3; /* Blue links to make users hover over them and try to enter act with*/
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #00ffaa; /* Slightly lighter on hover */
+    color: #0be75f; /* Greener to increase visibility when hovering over*/
 }
 
 /* Footer Styles */
